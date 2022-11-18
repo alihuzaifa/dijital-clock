@@ -1,0 +1,90 @@
+/* for all whole body compulsory */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* import font from google */
+@font-face {
+    font-family: baloo;
+    src: url(fonts/Baloo2-Medium.ttf);
+}
+
+/* screen */
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*first box Dijital clock box */
+.box{
+    width: 30vw;
+    height: 10vh;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none; 
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*second box inner text like hour minute second etc */
+.minutes , .hour , .seconds , .dot{
+    font-size: 4.5em;
+    font-weight: bold;
+    font-family: baloo;
+}
+
+/* second box innertext container that you merge */
+.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2.65em;
+    font-weight: bold;
+    font-family: baloo;
+    background-color: #ffff;
+    padding: 10px;
+    width: 30vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* first box innertext  */
+.week-day , .month , .day , .year{
+    padding: 5px;
+}
+
+/* all buttons */
+#start , #stop{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+    color: #ffff;
+    font-family: baloo;
+    font-size: 1.5em;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+/* pm or am duration */
+.pm-or-am{
+    font-family: baloo;
+    font-weight: bold;
+    font-size: 2em;
+    /* display: none; */
+}
